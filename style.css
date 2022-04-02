@@ -1,0 +1,20 @@
+body
+    {
+        width: 50%;
+        margin: auto;
+        border: 1px solid white;
+        padding: 1%;
+        background-color: #123456;
+        color: #f6f6f6;
+        font-family: system-ui;
+        font-size: 0.85rem;
+   }
+  a {
+    color: #f6f6f6;
+    text-decoration: none;
+  }
+  #rangeInput {
+    display: block;
+    margin-top: 1.5rem;
+  }
+  
