@@ -19,11 +19,11 @@
             <input id="rangeInput" type="range" min="1" max="100">
             <span id="rangeSelect"></span>
         </div>
-        <div>
-            <input class="btn btn-primary my-2 " id="formSubmit" type="submit" value="Submit">
+            <input class="btn btn-primary my-2" id="formSubmit" type="submit" value="Submit">
         </div>
     </form>
-    <button class="btn btn-primary my-2 ">Clear and choose another number</button>
+    
+    <button id="btn" class="btn btn-secondary my-2 ">Clear and choose another number</button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="index.js"></script>

@@ -5,34 +5,46 @@ let rangeInput  = document.getElementById('rangeInput');
 let rangeSelect = document.getElementById('rangeSelect');
 
 // display range value when user move selector
-    rangeSelect.textContent = rangeInput.value;
-    rangeInput.oninput = function (){rangeSelect.textContent = rangeInput.value;}
-//
-myForm.addEventListener('submit', () => {
+rangeSelect.textContent = rangeInput.value;
+rangeInput.oninput = function (){rangeSelect.textContent = rangeInput.value;}
 
-    let index       = 0;
-    let body    = document.querySelector('body');
-    let result  = document.createElement("div");
+myForm.addEventListener('submit', () =>
+{
+    let body        = document.querySelector('body');
+    let btn         = document.getElementById('btn');
+    let result      = document.createElement("div");
+
+    // insert a div for the result
     result.setAttribute('id', 'result'); 
     body.appendChild(result);
 
+
+    // when btn clear is clicked
+    btn.addEventListener('click', (e)=> {
+        result.remove();
+    });
+
+    // set the number the operation 
+    let index       = 0;
+
+    // set and displayed the range value
     let p = document.createElement("p");
     let testNumber  = rangeInput.value;
-    
-    // display text for start function
     p.innerHTML="<h3>Result step by step with number " + testNumber + "</h3>";
     result.appendChild(p);
     
-    // Call function and display calculs
+    // Calling the function to display results
     collatzSyracuse(testNumber);
     
     //
     // FUNCTION CALLBACK syracuseConjecture(integer)
-    // if number is odd and different to one then
+    // if number is odd and different to 1, then testNumber / 2
+    // else testNumber = testNumber * 3 + 1
+    // while testNumber <> 1
     // 
     function collatzSyracuse(testNumber)
     {
-        index++;
+        index++; // displayed the number the operation 
 
         if (testNumber % 2 == 0 && testNumber !== 1)
         {
