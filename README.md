@@ -1,5 +1,9 @@
 # Collatz-Syracuse-conjecture
-recruitment test for a job march 2022
+
+title       : COLLATZ-SYRACUSE CONJECTURE
+note        : recruitment test for a job march 2022
+author      : françois Couvé-Bonnaire
+date        : 2022 april 02
 
 ## Wikipedia definition:
 <a href="https://fr.wikipedia.org/wiki/Conjecture_de_Syracuse" target="_blank">Conjecture de Syracuse, french definition from Wikipedia</a></br></br>
